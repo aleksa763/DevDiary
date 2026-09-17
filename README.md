@@ -41,5 +41,5 @@ cd devdiary
 pip install -r requirements.txt
 
 
-python analyzer.py --start 2024-01-01 --end 2024-12-31 --category electronics --top 5
+
 
