@@ -73,19 +73,45 @@ pip install -r requirements.txt
 
 ### Сигнатура функции
 
-```python
-def analyze_sales(
-    orders,
-    start_date,
-    end_date,
-    category_filter,
-    min_amount,
-    top_n,
-    include_returns,
-    currency_scale
-):
-    pass
-```
+from variant_1 import analyze_sales
+
+orders = [
+    {
+        "id": 1,
+        "date": "2026-09-01",
+        "customer_id": 101,
+        "category": "Electronics",
+        "amount": 1200,
+        "quantity": 1,
+        "is_returned": False,
+        "city": "Moscow",
+        "payment_method": "card",
+    },
+    {
+        "id": 2,
+        "date": "2026-09-02",
+        "customer_id": 102,
+        "category": "Books",
+        "amount": 500,
+        "quantity": 3,
+        "is_returned": False,
+        "city": "Kazan",
+        "payment_method": "cash",
+    },
+]
+
+report = analyze_sales(
+    orders=orders,
+    start_date="2026-09-01",
+    end_date="2026-09-30",
+    category_filter=None,
+    min_amount=0,
+    top_n=3,
+    include_returns=False,
+    currency_scale=1.0,
+)
+
+print(report)
 
 ### Пример вызова
 
