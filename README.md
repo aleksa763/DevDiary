@@ -11,7 +11,7 @@
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ![Sales Analyzer](https://buybiz.pro/wp-content/uploads/2020/05/image002.jpg)
-
+<img src="https://example.com/sales.png" alt="Анализ продаж" width="600">
 ---
 
 ## 📑 Оглавление
