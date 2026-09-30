@@ -10,7 +10,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-![Sales Analyzer](https://placehold.co/900x300/2563eb/ffffff?text=SalesAnalyzer)
+![Sales Analyzer](https://buybiz.pro/wp-content/uploads/2020/05/image002.jpg)
 
 ---
 
