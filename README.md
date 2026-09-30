@@ -75,6 +75,8 @@ pip install -r requirements.txt
 
 from variant_1 import analyze_sales
 
+from variant_1 import analyze_sales
+
 orders = [
     {
         "id": 1,
