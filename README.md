@@ -71,48 +71,6 @@ pip install -r requirements.txt
 
 Основная функция проекта — `analyze_sales()`.
 
-### Сигнатура функции
-
-from variant_1 import analyze_sales
-
-orders = [
-    {
-        "id": 1,
-        "date": "2026-09-01",
-        "customer_id": 101,
-        "category": "Electronics",
-        "amount": 1200,
-        "quantity": 1,
-        "is_returned": False,
-        "city": "Moscow",
-        "payment_method": "card",
-    },
-    {
-        "id": 2,
-        "date": "2026-09-02",
-        "customer_id": 102,
-        "category": "Books",
-        "amount": 500,
-        "quantity": 3,
-        "is_returned": False,
-        "city": "Kazan",
-        "payment_method": "cash",
-    },
-]
-
-report = analyze_sales(
-    orders=orders,
-    start_date="2026-09-01",
-    end_date="2026-09-30",
-    category_filter=None,
-    min_amount=0,
-    top_n=3,
-    include_returns=False,
-    currency_scale=1.0,
-)
-
-print(report)
-
 ### Пример вызова
 
 ```python
@@ -132,19 +90,6 @@ report = analyze_sales(
 print(report)
 ```
 
-### Параметры функции
-
-| Параметр | Описание |
-|---|---|
-| `orders` | Список заказов |
-| `start_date` | Начальная дата анализа |
-| `end_date` | Конечная дата анализа |
-| `category_filter` | Фильтр по категории или `None` |
-| `min_amount` | Минимальная сумма заказа |
-| `top_n` | Количество элементов в топе |
-| `include_returns` | Учитывать ли возвращённые заказы |
-| `currency_scale` | Масштаб денежных значений |
-
 ### Основные CLI-команды
 
 | Команда | Описание |
@@ -159,41 +104,7 @@ print(report)
 
 ---
 
-## 📦 Пример данных
-
-Каждый заказ представлен словарём со следующими полями:
-
-```python
-order = {
-    "id": 1001,
-    "date": "2026-01-15",
-    "customer_id": 501,
-    "category": "Electronics",
-    "amount": 1250.50,
-    "quantity": 2,
-    "is_returned": False,
-    "city": "Amsterdam",
-    "payment_method": "card"
-}
-```
-
-### Описание полей
-
-| Поле | Тип | Описание |
-|---|---|---|
-| `id` | `int` | Уникальный идентификатор заказа |
-| `date` | `str` | Дата заказа |
-| `customer_id` | `int` | Идентификатор покупателя |
-| `category` | `str` | Категория товара |
-| `amount` | `float` | Сумма заказа |
-| `quantity` | `int` | Количество товаров |
-| `is_returned` | `bool` | Признак возврата |
-| `city` | `str` | Город покупателя |
-| `payment_method` | `str` | Способ оплаты |
-
----
-
-## 📊 Пример результата
+## 📊 Пример заметки
 
 Функция возвращает словарь со статистикой продаж.
 
